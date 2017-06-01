@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+	
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title></title>
+		<style type="text/css" media="screen">
+			*{ padding:0;
+		     margin: 0;
+		     }
+		     body{
+		     	background-color: grey;
+		     }
+		     #register{
+		     	width: 300px;
+		     	height: 500px;
+		     	background-color: black;
+		     	color:white;
+		     	position: absolute;
+		     	left: 35%;
+		     	top: 100px;
+		     }
+		     p{
+		     	margin: 20px 0 0 30px;
+		     }
+		     a{
+	         text-decoration: none;
+	         color: white;
+                }
+		</style>
+	</head>
+	<body>
+        <div id="register">
+        	
+		<form action="register.php" method="post">
+			<p> 用户名：<input type="text" name="uname" id="uname"></p>
+			<p> 密&nbsp;码：<input type="password" name="pass" id="pass"></p>
+			<p> 邮&nbsp;箱：<input type="email" name="email" id="email"></p>
+			<p> 性&nbsp;别：<input type="text" name="sex" id="sex"></p>
+			<p>年&nbsp;龄：<input type="num" name="age" id="age"> </p>
+			<p>住&nbsp;址：<input type="text" name="address" id="address"> </p>
+            <p><input type="submit" name="submit" id="sumbit" value="注册"> </p>
+            <p><input type="button" name="submit"  value=""> <a href="person.html">返回</a></p>
+		</form>
+        </div>
+
+	</body>
+	<script src="jquery.js"></script>
+	<script src="ajax.js"></script>
+	<script>
+		
+	/*	$("#sumbit").click(function(){
+			var uname=$("#uname").val();
+		    var pass=$("#pass").val();
+		    console.log(uname);
+		     console.log(pass);
+       sajax.post("accept.php",{uname:uname,pass:pass},function(data,err){
+                           console.log(data);
+       })
+
+		})
+
+*/
+
+
+	</script>
+</html>
